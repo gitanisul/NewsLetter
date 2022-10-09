@@ -38,7 +38,7 @@ app.post("/", function(req, res){
     const url ="https://us13.api.mailchimp.com/3.0/lists/0b4eaf1db4";
     const options = {
         method: "POST",
-        auth: "mailuser:3874fb047b0d94ac197e3651f3c7c2c5-us13"
+        auth: "/apikey.txt"
     };
 
    const request= https.request(url, options, function(response){
@@ -73,3 +73,4 @@ app.listen(process.env.PORT || 3000, function(){
 
 //3874fb047b0d94ac197e3651f3c7c2c5-us13
 //0b4eaf1db4
+//https://fierce-mesa-56327.herokuapp.com/
